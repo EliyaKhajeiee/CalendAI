@@ -1,0 +1,71 @@
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: lightslategrey;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1; /* Both panels should take up equal space */
+  padding: 20px;
+  background-color: #f8f1d7;
+  border-radius: 10px;
+}
+
+.left-panel {
+  margin-right: 20px;
+}
+
+.right-panel {
+  margin-left: 20px;
+}
+
+h2 {
+  color: saddlebrown;
+  margin-bottom: 20px;
+}
+
+.text-box {
+  margin-bottom: 15px;
+}
+
+.textbox-input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #4d3319;
+  border-radius: 5px;
+}
+
+
+.date-display {
+  margin-top: 20px;
+  color: #4d3319;
+}
+
+.rbc-toolbar {
+  display: none; /* Hide the toolbar */
+}
+
+.rbc-time-header,
+.rbc-date-cell {
+  border: none; /* Remove borders */
+}
+
+.rbc-time-view {
+  border: 1px solid #ccc; /* Add border to separate planner from calendar */
+  border-radius: 5px;
+  overflow: auto;
+  height: 500px;
+  width: 100%; /* Take up the full width of the right panel */
+}
+
+.rbc-event {
+  background-color: #b3cde0; /* Light blue background for events */
+  border: none;
+}
+
+.rbc-today {
+  background-color: #ffff99; /* Yellow background for today's date */
+}
